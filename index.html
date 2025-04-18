@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div1">
+
+        <div class="div2">
+          <img src="education.jpeg" alt="image d'éducation">
+        </div>
+
+        <div class="div3">
+            <h2>Inscription à la formation</h2>
+            <form action="enregistrer.php" method="post" id="formulaire">
+                <label>Nom :</label>
+                <input type="text" name="nometud" required>
+                <label>Prénom :</label>
+                <input type="text" name="prenometud" required>
+                <label>Email :</label>
+                <input type="email" name="emailetud" required>
+                <label>Âge :</label>
+                <input type="number" name="age" required>
+                <label>Téléphone :</label>
+                <input type="tel" name="tele" required>
+                <label>Adresse :</label>
+                <textarea name="adressetud" rows="3" required></textarea>
+                <button type="submit">Ajouter</button>
+                <button type="button" id="afficherBtn">Afficher les etudiants</button>
+            </form>
+        </div>
+    </div>
+    <div id="tableauContainer" style="display:none; margin-top: 20px;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
