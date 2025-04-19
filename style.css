@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column; /* تأكد أن جميع المحتويات تكون عمودية */
 }
   
 /* الحاوية الأساسية */
@@ -19,6 +20,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     background-color: #fff;
+    margin-bottom: 20px; /* مسافة بين الفورم والصورة والجدول */
 }
   
 /* الصورة */
@@ -113,9 +115,4 @@ th {
 td {
     background-color: #f9f9f9;
 }
-#tableauContainer {
-    display: none;
-    margin-top: 50px;
-    padding: 20px;
-    border: 1px solid black;
-}
+

@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
         afficherBtn.addEventListener("click", function (e) {
             e.preventDefault(); // يمنع الفورم من الإرسال
 
-            // إرسال طلب لجلب الجدول من PHP
+            // إرسال طلب لجلب الجدول من afficher.php بدلاً من enregistrer.php
             const xhr = new XMLHttpRequest();
-            xhr.open("GET", "enregistrer.php", true);
+            xhr.open("GET", "afficher.php", true);
             xhr.onload = function () {
                 if (xhr.status === 200) {
                     tableauContainer.innerHTML = xhr.responseText;
@@ -22,11 +22,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-// دالة تأكيد الحذف
-function showAlert(action) {
-    if (action === "delete") {
-        return confirm("Êtes-vous sûr de vouloir supprimer cet étudiant ?");
-    }
-    return true;
-}

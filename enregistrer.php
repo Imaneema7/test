@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         ]);
 
         // بعد إضافة الطالب بنجاح، سيتم عرض تنبيه
-        echo "<script>alert('Étudiant ajouté avec succès !'); window.location.href='enregistrer.php';</script>";
+        echo "<script>alert('Étudiant ajouté avec succès !'); window.location.href='index.html';</script>";
         exit;
     } catch (PDOException $e) {
         echo "Erreur : " . $e->getMessage();
